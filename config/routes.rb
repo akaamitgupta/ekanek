@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'profile', to: 'users#profile'
   get 'upload_file', to: 'users#show_upload_file'
   post 'upload_file', to: 'users#upload_file'
+  get ':code', to: 'users#show_document'
 end
