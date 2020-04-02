@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'signup', to: 'auth#show_signup'
+  post 'signup', to: 'auth#signup'
+  get 'login', to: 'auth#show_login'
+  post 'login', to: 'auth#login'
+  post 'logout', to: 'auth#logout'
+
+  get 'profile', to: 'users#profile'
 end
