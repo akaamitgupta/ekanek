@@ -1,0 +1,13 @@
+<%= form_with(url: upload_file_path, method: "post", multipart: true) do %>
+  <%= label_tag :title%><br>
+  <%= text_field_tag :title, nil, required: true%><br>
+  <%= label_tag :description%><br>
+  <%= text_area_tag(:description, "", size: "24x6", required: true) %><br>
+  <%= file_field_tag 'document', required: true %><br><br>
+
+  <%= submit_tag "Submit" %>
+<% end %>
+
+<br>
+<br>
+<%= link_to "Back to Profile", profile_path %>

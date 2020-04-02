@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   post 'logout', to: 'auth#logout'
 
   get 'profile', to: 'users#profile'
+  get 'upload_file', to: 'users#show_upload_file'
+  post 'upload_file', to: 'users#upload_file'
 end
