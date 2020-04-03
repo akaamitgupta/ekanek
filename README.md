@@ -1,24 +1,27 @@
-# README
+# ekanek
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1 Requirements
+------------
+- ruby 2.7+
+- MySQL
+- rails 6.0.0
 
-Things you may want to cover:
+2 Installation
+--------------------
+```
+git clone https://github.com/akaamitgupta/ekanek.git
+cd ekanek
+```
 
-* Ruby version
+To Install dependencies run `bundle install`
 
-* System dependencies
+Starting up the Web Server: `rails server`
 
-* Configuration
+Open `http://localhost:3000` which will show rails default welcome page.
 
-* Database creation
+3 Usage
+----------
 
-* Database initialization
+Signup - http://localhost:3000/signup
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Login - http://localhost:3000/login
