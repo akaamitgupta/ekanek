@@ -15,6 +15,20 @@ cd ekanek
 
 To Install dependencies run `bundle install`
 
+Create a MySQL Database - `ekanek`
+
+Update database config in `config/database.yml`
+```
+development:
+  adapter: mysql2
+  encoding: utf8mb4
+  database: ekanek
+  pool: 5
+  username: root
+  password:
+```
+Run the migration `rails db:migrate`
+
 Starting up the Web Server: `rails server`
 
 Open `http://localhost:3000` which will show rails default welcome page.
